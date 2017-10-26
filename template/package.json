@@ -25,7 +25,7 @@
     "node-notifier": "^5.0.2",
     "think-watcher": "^3.0.0",
     "think-inspect": "0.0.2",
-    "think-typescript": "^1.0.3",
+    "think-typescript": "^1.0.4",
     "tslint": "^5.8.0"
   },
   "repository": "",
