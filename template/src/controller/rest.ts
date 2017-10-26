@@ -1,4 +1,4 @@
-import assert from "assert";
+const assert = require("assert");
 import { Model } from "think-model";
 import { think, Context } from "thinkjs";
 
