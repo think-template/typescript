@@ -1,4 +1,4 @@
-import Base from '{path}base.js';
+import Base from '{{path}}base.js';
 export default class extends Base {
   indexAction() {
     return this.display();
