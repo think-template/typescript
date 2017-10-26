@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node development.js",
-    "compile": "tsc",
+    "compile": "npm run lint && tsc",
     "lint": "tslint \"src/**/*.ts\""
   },
   "dependencies": {
@@ -22,17 +22,16 @@
   },
   "type": "index.d.ts",
   "devDependencies": {
+    "typescript": "^2.5.3",
     "@types/koa": "*",
     "node-notifier": "^5.0.2",
-    "think-watcher": "^3.0.0",
     "think-inspect": "0.0.2",
-    "think-typescript": "^1.0.3",
     "tslint": "^5.8.0"
   },
   "repository": "",
   "license": "MIT",
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=7.0.0"
   },
   "readmeFilename": "README.md"
 }

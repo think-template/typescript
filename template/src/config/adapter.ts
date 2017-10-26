@@ -1,8 +1,8 @@
-import fileCache from "think-cache-file";
-import nunjucks from "think-view-nunjucks";
-import fileSession from "think-session-file";
-import mysql from "think-model-mysql";
-import path from "path";
+const fileCache = require('think-cache-file');
+const nunjucks = require('think-view-nunjucks');
+const fileSession = require('think-session-file');
+const mysql = require('think-model-mysql');
+const path = require('path');
 import { think } from "thinkjs";
 const isDev = think.env === "development";
 
