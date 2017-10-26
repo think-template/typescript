@@ -7,7 +7,7 @@ module.exports = {
     "description": {
       "type": "string",
       "message": "Project description",
-      "default": "A Speike project"
+      "default": "ThinkJS 3.0 typescript"
     },
     "author": {
       "type": "string",
