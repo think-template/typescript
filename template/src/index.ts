@@ -7,11 +7,9 @@ import './extend/service';
 import './extend/application';
 import './extend/request';
 import './extend/response';
-import 'think-i18n';
-import 'think-model';
-import 'think-session';
-import 'think-cache';
-import 'think-websocket';
 import 'think-view';
+import 'think-model';
+import 'think-cache';
+import 'think-session';
 
 export const think = ThinkJS.think;
