@@ -2,8 +2,8 @@ declare module 'thinkjs' {
   interface Context {
   }
 }
- 
-var context = {
-} 
+
+const context = {
+};
 
 export default context;

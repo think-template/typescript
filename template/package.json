@@ -23,14 +23,11 @@
   "type": "index.d.ts",
   "devDependencies": {
     "@types/koa": "*",
-    "babel-cli": "^6.24.1",
-    "babel-preset-think-node": "^1.0.0",
     "node-notifier": "^5.0.2",
     "think-watcher": "^3.0.0",
     "think-inspect": "0.0.2",
     "think-typescript": "^1.0.3",
-    "eslint": "^4.2.0",
-    "eslint-config-think": "^1.0.0"
+    "tslint": "^5.8.0"
   },
   "repository": "",
   "license": "MIT",

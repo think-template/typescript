@@ -1,23 +1,23 @@
 {
-  "compilerOptions": {
-      "module": "commonjs",
-      "target": "es2016",
-      "noImplicitAny": true,
-      "removeComments": true,
-      "preserveConstEnums": true,
-      "suppressImplicitAnyIndexErrors": true,
-      "sourceMap": true,
-      "outDir": "app",
-      "baseUrl": ".",
-      "paths": {
-        "thinkjs": ["./index"]
-      }
-  },
-  "include": [
-      "src/**/*.ts"
-  ],
-  "exclude": [
-      "node_modules",
-      "**/*.spec.ts"
-  ]
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2016",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "sourceMap": true,
+        "outDir": "app",
+        "baseUrl": ".",
+        "paths": {
+            "thinkjs": ["src/index"]
+        }
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
 }

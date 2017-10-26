@@ -4,7 +4,7 @@ declare module 'thinkjs' {
   }
 }
 
-var controller = {
-} 
+const controller = {
+};
 
 export default controller;

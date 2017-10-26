@@ -1,6 +1,6 @@
-const assert = require('assert');
-import { Model } from 'think-model';
-import { think, Context } from 'thinkjs';
+import assert from "assert";
+import { Model } from "think-model";
+import { think, Context } from "thinkjs";
 
 export default class extends think.Controller {
   resource: string;
@@ -49,8 +49,9 @@ export default class extends think.Controller {
   async postAction() {
     const pk = this.modelInstance.pk;
     const data = this.post();
-    if (data[pk])
+    if (data[pk]) {
       delete data[pk];
+    }
     if (think.isEmpty(data)) {
       return this.fail('data is empty');
     }
@@ -89,4 +90,4 @@ export default class extends think.Controller {
   __call() {
 
   }
-};
+}
