@@ -14,4 +14,4 @@ import 'think-cache';
 import 'think-websocket';
 import 'think-view';
 
-export var think = ThinkJS.think;
+export const think = ThinkJS.think;
