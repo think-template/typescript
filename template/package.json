@@ -1,7 +1,8 @@
 {
-  "name": "thinkjs-application",
-  "description": "application created by thinkjs",
+  "name": "<%= name %>",
+  "description": "<%= description %>",
   "version": "1.0.0",
+  "author": "<%- author %>",
   "scripts": {
     "start": "node development.js",
     "compile": "npm run lint && tsc",
@@ -18,7 +19,6 @@
     "think-view-nunjucks": "^1.0.1",
     "thinkjs": "^3.2.3"
   },
-  "type": "index.d.ts",
   "devDependencies": {
     "typescript": "^2.5.3",
     "@types/koa": "*",
@@ -31,7 +31,7 @@
   "repository": "",
   "license": "MIT",
   "engines": {
-    "node": ">=7.0.0"
+    "node": ">=6.0.0"
   },
   "readmeFilename": "README.md"
 }

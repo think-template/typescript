@@ -7,64 +7,82 @@ module.exports = {
     "description": {
       "type": "string",
       "message": "Project description",
-      "default": "ThinkJS 3.0 typescript"
+      "default": "application created by thinkjs"
     },
     "author": {
       "type": "string",
       "message": "Author"
     }
   },
-  "skipCompile": [
-    "src/**/*.vue",
-    "src/assets/*.png"
-  ],
-  "filesignore": [
-    "src/controller/index.tpl.ts",
-    "src/controller/restIndex.tpl.ts",
-    "src/controller/restIndex.ts",
-    "src/controller/rest.ts",
-    "src/adapter",
-    "src/middleware",
-    "src/service"
-  ],
-  "multiModule": [
-    ["src/bootstrap", "src/common/bootstrap"],
-    ["src/config", "src/common/config"],
-    ["src/config/config.ts", "src/[defaultModule]/config/config.ts"],
-    ["src/controller", "src/[defaultModule]/controller"],
-    ["src/logic", "src/[defaultModule]/logic"],
-    ["src/model", "src/[defaultModule]/model"],
-    ["view/index_index.html", "view/[defaultModule]/index_index.html"]
-  ],
+  "new": {
+    "default": [
+      ["src/bootstrap", "src/bootstrap"],
+      ["src/config", "src/config"],
+      ["src/controller/base.ts", "src/controller/base.ts"],
+      ["src/controller/index.ts", "src/controller/index.ts"],
+      ["src/logic", "src/logic"],
+      ["src/model", "src/model"],
+      ["test/index.ts", "test/index.ts"],
+      ["view/index_index.html", "view/index_index.html"],
+      ["development.ts", "development.ts"],
+      ["eslintrc", ".eslintrc"],
+      ["gitignore", ".gitignore"],
+      ["nginx.conf", "nginx.conf"],
+      ["package.tson", "package.tson"],
+      ["pm2.tson", "pm2.tson"],
+      ["production.ts", "production.ts"],
+      ["README.md", "README.md"]
+    ],
+    "multiModule": [
+      ["src/bootstrap", "src/common/bootstrap"],
+      ["src/config", "src/common/config"],
+      ["src/config/config.ts", "src/[moduleName]/config/config.ts"],
+      ["src/controller/base.ts", "src/[moduleName]/controller/base.ts"],
+      ["src/controller/index.ts", "src/[moduleName]/controller/index.ts"],
+      ["src/logic", "src/[moduleName]/logic"],
+      ["src/model", "src/[moduleName]/model"],
+      ["test/index.ts", "test/index.ts"],
+      ["view/index_index.html", "view/[moduleName]/index_index.html"],
+      ["development.ts", "development.ts"],
+      ["eslintrc", ".eslintrc"],
+      ["gitignore", ".gitignore"],
+      ["nginx.conf", "nginx.conf"],
+      ["package.tson", "package.tson"],
+      ["pm2.tson", "pm2.tson"],
+      ["production.ts", "production.ts"],
+      ["README.md", "README.md"]
+    ]
+  },
   "controller": {
     "default": [
-      ["src/controller/index.tpl.ts", "/controller/[name].ts"],
-      ["src/logic/index.ts", "/logic/[name].ts"]
+      ["src/controller/index.ts", "src/[moduleName]/controller/[action].ts"],
+      ["src/logic/index.ts", "src/[moduleName]/logic/[action].ts"]
     ],
     "rest": [
-      ["src/controller/rest.ts", "controller/rest.ts"],
-      ["src/controller/restIndex.tpl.ts", "/controller/[name].ts"],
-      ["src/logic/index.ts", "/logic/[name].ts"]
+      ["src/controller/rest.ts", "src/[moduleName]/controller/rest.ts"],
+      ["src/controller/restIndex.ts", "src/[moduleName]/controller/[action].ts"],
+      ["src/logic/index.ts", "src/[moduleName]/logic/[action].ts"]
     ]
   },
   "model": [
-    ["src/model/index.ts", "/model/[name].ts"]
+    ["src/model/index.ts", "src/[moduleName]/model/[action].ts"]
   ],
   "service": [
-    ["src/service/index.ts", "/service/[name].ts"]
+    ["src/service/index.ts", "src/[moduleName]/service/[action].ts"]
   ],
   "middleware": [
-    ["src/middleware/base.ts", "/middleware/[name].ts"]
+    ["src/middleware/base.ts", "src/[moduleName]/middleware/[action].ts"]
   ],
   "adapter": [
-    ["src/adapter/base.ts", "/adapter/[type]/[name].ts"]
+    ["src/adapter/base.ts", "src/[moduleName]/adapter/[type]/[action].ts"]
   ],
   "module": [
-    ["src/config/config.ts", "/config/config.ts"],
-    ["src/controller/base.ts", "/controller/base.ts"],
-    ["src/controller/index.ts", "/controller/index.ts"],
-    ["src/logic/index.ts", "/logic/index.ts"],
-    ["src/model/index.ts", "/model/index.ts"],
-    ["view/index_index.html", "/index_index.html", "view"]
-  ]
+    ["src/config/config.ts", "src/[moduleName]/config/config.ts"],
+    ["src/controller/base.ts", "src/[moduleName]/controller/base.ts"],
+    ["src/controller/index.ts", "src/[moduleName]/controller/index.ts"],
+    ["src/logic/index.ts", "src/[moduleName]/logic/index.ts"],
+    ["src/model/index.ts", "src/[moduleName]/model/index.ts"],
+    ["view/index_index.html", "view/[moduleName]/index_index.html"]
+  ],
+  "completeMessage": "To get started:\n\n<% if (!inPlace) { %># enter path\n$ cd <%= destDirName %>\n\n<% } %># install dependencies:\n$ npm install\n\n# run the app\n$ npm start"
 }
