@@ -24,14 +24,15 @@ module.exports = {
       ["src/model", "src/model"],
       ["test/index.ts", "test/index.ts"],
       ["view/index_index.html", "view/index_index.html"],
-      ["development.ts", "development.ts"],
-      ["eslintrc", ".eslintrc"],
+      ["development.js", "development.js"],
       ["gitignore", ".gitignore"],
       ["nginx.conf", "nginx.conf"],
       ["package.tson", "package.tson"],
       ["pm2.tson", "pm2.tson"],
-      ["production.ts", "production.ts"],
-      ["README.md", "README.md"]
+      ["production.js", "production.js"],
+      ["README.md", "README.md"],
+      ["tsconfig.json", "tsconfig.json"],
+      ["tslint.json", "tslint.json"]
     ],
     "multiModule": [
       ["src/bootstrap", "src/common/bootstrap"],
@@ -43,14 +44,15 @@ module.exports = {
       ["src/model", "src/[moduleName]/model"],
       ["test/index.ts", "test/index.ts"],
       ["view/index_index.html", "view/[moduleName]/index_index.html"],
-      ["development.ts", "development.ts"],
-      ["eslintrc", ".eslintrc"],
+      ["development.js", "development.js"],
       ["gitignore", ".gitignore"],
       ["nginx.conf", "nginx.conf"],
       ["package.tson", "package.tson"],
       ["pm2.tson", "pm2.tson"],
-      ["production.ts", "production.ts"],
-      ["README.md", "README.md"]
+      ["production.js", "production.js"],
+      ["README.md", "README.md"],
+      ["tsconfig.json", "tsconfig.json"],
+      ["tslint.json", "tslint.json"]
     ]
   },
   "controller": {

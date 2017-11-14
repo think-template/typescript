@@ -1,2 +1,2 @@
 # typescript
-ThinkJS typescript cli tempalte
+ThinkJS typescript tempalte
