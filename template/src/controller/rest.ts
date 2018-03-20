@@ -80,7 +80,7 @@ export default class extends think.Controller {
     }
     const pk = this.modelInstance.pk;
     const data = this.post();
-    delete data[pk];
+    data[pk] = this.id; // rewrite data[pk] forbidden data[pk] !== this.id
     if (think.isEmpty(data)) {
       return this.fail('data is empty');
     }
