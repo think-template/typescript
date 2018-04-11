@@ -19,7 +19,7 @@ export default class extends think.Controller {
    * @return {String} [resource name]
    */
   getResource() {
-    return this.ctx.controller;
+    return this.ctx.controller.split('/').pop();
   }
   getId() {
     const id = this.get('id');
