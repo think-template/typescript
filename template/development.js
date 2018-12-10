@@ -15,7 +15,8 @@ const instance = new Application({
       noImplicitAny: true,
       removeComments: true,
       preserveConstEnums: true,
-      suppressImplicitAnyIndexErrors: true
+      suppressImplicitAnyIndexErrors: true,
+      esModuleInterop: true
     }
   }],
   notifier: notifier.notify.bind(notifier),

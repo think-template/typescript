@@ -7,10 +7,13 @@
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true,
         "sourceMap": true,
+        "esModuleInterop": true,
         "outDir": "app",
         "baseUrl": ".",
         "paths": {
-            "thinkjs": ["src/index"]
+            "thinkjs": [
+                "src/index"
+            ]
         }
     },
     "include": [
