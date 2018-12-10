@@ -10,7 +10,7 @@ const instance = new Application({
   transpiler: [typescript, {
     compilerOptions: {
       module: 'commonjs',
-      target: 'es2016',
+      target: 'es2017',
       sourceMap: true,
       noImplicitAny: true,
       removeComments: true,
