@@ -1,2 +1,2 @@
 # typescript
-ThinkJS typescript tempalte
+ThinkJS typescript template
