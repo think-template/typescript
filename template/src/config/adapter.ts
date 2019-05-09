@@ -43,7 +43,8 @@ exports.model = {
     port: '',
     user: 'root',
     password: 'root',
-    dateStrings: true
+    dateStrings: true,
+    acquireWaitTimeout: isDev ? 3000 : 0
   }
 };
 
