@@ -3,5 +3,4 @@ declare module 'thinkjs' {
   }
 }
 
-export default {
-};
+export default {};

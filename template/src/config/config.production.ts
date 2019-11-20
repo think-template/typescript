@@ -1,4 +1,4 @@
 // production config, it will load in production enviroment
-module.exports = {
+export = {
   workers: 0
 };

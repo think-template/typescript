@@ -1,12 +1,11 @@
-const assert = require("assert");
+import assert from 'assert';
 import { Model } from "think-model";
-import { think, Context } from "thinkjs";
 
 export default class extends think.Controller {
   resource: string;
   id: string;
   modelInstance: Model;
-  constructor(ctx: Context) {
+  constructor(ctx: ThinkContext) {
     super(ctx);
     this.resource = this.getResource();
     this.id = this.getId();

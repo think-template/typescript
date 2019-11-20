@@ -1,16 +1,10 @@
-const fileCache = require('think-cache-file');
-const nunjucks = require('think-view-nunjucks');
-const fileSession = require('think-session-file');
-const mysql = require('think-model-mysql');
-const path = require('path');
-import { think } from "thinkjs";
-const isDev = think.env === "development";
+import 'thinkjs3-ts';
+import path from 'path';
+import nunjucks from 'think-view-nunjucks';
+import fileSession from 'think-session-file';
+import fileCache from 'think-cache-file';
 
-/**
- * cache adapter config
- * @type {Object}
- */
-exports.cache = {
+export const cache  = {
   type: 'file',
   common: {
     timeout: 24 * 60 * 60 * 1000 // millisecond
@@ -23,36 +17,7 @@ exports.cache = {
   }
 };
 
-/**
- * model adapter config
- * @type {Object}
- */
-exports.model = {
-  type: 'mysql',
-  common: {
-    logConnect: isDev,
-    logSql: isDev,
-    logger: (msg: string) => think.logger.info(msg)
-  },
-  mysql: {
-    handle: mysql,
-    database: '',
-    prefix: 'think_',
-    encoding: 'utf8',
-    host: '127.0.0.1',
-    port: '',
-    user: 'root',
-    password: 'root',
-    dateStrings: true,
-    acquireWaitTimeout: isDev ? 3000 : 0
-  }
-};
-
-/**
- * session adapter config
- * @type {Object}
- */
-exports.session = {
+export const session = {
   type: 'file',
   common: {
     cookie: {
@@ -67,11 +32,7 @@ exports.session = {
   }
 };
 
-/**
- * view adapter config
- * @type {Object}
- */
-exports.view = {
+export const view = {
   type: 'nunjucks',
   common: {
     viewPath: path.join(think.ROOT_PATH, 'view'),

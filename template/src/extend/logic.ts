@@ -4,7 +4,4 @@ declare module 'thinkjs' {
   }
 }
 
-const myLogic = {
-};
-
-export default myLogic;
+export default {};

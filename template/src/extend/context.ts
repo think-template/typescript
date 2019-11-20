@@ -3,7 +3,4 @@ declare module 'thinkjs' {
   }
 }
 
-const context = {
-};
-
-export default context;
+export default {};

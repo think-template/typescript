@@ -4,7 +4,4 @@ declare module 'thinkjs' {
   }
 }
 
-const think = {
-};
-
-export default think;
+export default {};

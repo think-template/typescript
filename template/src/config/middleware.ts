@@ -1,8 +1,8 @@
-import * as path from 'path';
-import { think } from 'thinkjs';
+import 'thinkjs3-ts';
+import path from 'path';
 const isDev = think.env === 'development';
 
-module.exports = [
+export = [
   {
     handle: 'meta',
     options: {

@@ -1,6 +1,5 @@
-import * as Think from 'thinkjs';
-export default (options: object, app: Think.Application) => {
-  return (ctx: Think.Context, next: () => void) => {
+export default (options: object, app: ThinkApplication) => {
+  return (ctx: ThinkContext, next: () => void) => {
     return next();
   };
 };

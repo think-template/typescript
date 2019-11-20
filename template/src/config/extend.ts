@@ -1,12 +1,9 @@
-const view = require('think-view');
-const model = require('think-model');
-const cache = require('think-cache');
-const session = require('think-session');
-import { think } from 'thinkjs';
+import view from 'think-view';
+import cache from 'think-cache';
+import session from 'think-session';
 
-module.exports = [
-  view, // make application support view
-  model(think.app),
+export = [
+  view,
   cache,
   session
 ];
