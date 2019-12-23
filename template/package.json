@@ -9,16 +9,14 @@
     "lint": "tslint \"src/**/*.ts\""
   },
   "dependencies": {
-    "think-cache": "git@github.com:thinkjs/think-cache.git#thinkjs3-ts",
-    "think-cache-file": "git@github.com:thinkjs/think-cache-file.git#thinkjs3-ts",
-    "think-model": "^1.3.2",
-    "think-model-mysql": "^1.0.0",
-    "think-session": "git@github.com:thinkjs/think-session.git#thinkjs3-ts",
-    "think-session-file": "git@github.com:thinkjs/think-session-file.git#thinkjs3-ts",
-    "think-view": "git@github.com:thinkjs/think-view.git#thinkjs3-ts",
-    "think-view-nunjucks": "git@github.com:thinkjs/think-view-nunjucks.git#thinkjs3-ts",
-    "thinkjs": "git@github.com:thinkjs/thinkjs.git#thinkjs3-ts",
-    "thinkjs3-ts": "git@github.com:thinkjs/thinkjs3-ts.git#thinkjs3-ts"
+    "think-cache": "^1.1.1",
+    "think-cache-file": "^1.1.1",
+    "think-session": "^1.1.5",
+    "think-session-file": "^1.1.2",
+    "think-view": "^1.0.12",
+    "think-view-nunjucks": "^1.0.10",
+    "thinkjs": "^3.2.11",
+    "thinkjs3-ts": "^1.0.1"
   },
   "devDependencies": {
     "typescript": "^2.5.3",
