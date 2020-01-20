@@ -28,6 +28,7 @@ export = [
   {
     handle: 'payload',
     options: {
+      uploadDir: path.join(think.RUNTIME_PATH, '_tmp'),
       keepExtensions: true,
       limit: '5mb'
     }
